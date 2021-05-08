@@ -7,6 +7,7 @@
         $ npm install -g typescript
         $ npm install -g @babel/cli
         $ npm install
+        $ cd 02_dynamodb; npm install; cd ../
 
 * AWS
 
