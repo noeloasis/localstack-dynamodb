@@ -62,3 +62,9 @@
             * Default AWS Region:　ap-northeast-1
             * Access key ID: dummy
             * Session token: dummy
+
+## TODO
+
+* Use `dynamodb-data-mapper-annotations`
+* Use model as an external file
+* Research `dynamodb-data-mapper`'s method (scan, update, delete, query, etc...)
