@@ -2,6 +2,12 @@
 
 ## preparation
 
+* npm
+
+        $ npm install -g typescript
+        $ npm install -g @babel/cli
+        $ npm install
+
 * AWS
 
         $ aws configure --profile localstack
