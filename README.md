@@ -47,3 +47,18 @@
 
         ./bin/run_lambda_01
         ./bin/run_lambda_02
+
+## tools
+
+* NoSQL Workbench
+
+    https://docs.aws.amazon.com/ja_jp/amazondynamodb/latest/developerguide/workbench.settingup.html
+
+    * How to Use
+        1. select 'Operation builder'
+        2. click 'Add Connection'
+        3. select 'DynamoDB local' tab
+        4. Input the following params and click 'Connect'
+            * Default AWS Region:　ap-northeast-1
+            * Access key ID: dummy
+            * Session token: dummy
