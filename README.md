@@ -22,6 +22,8 @@
     * up
     
             docker-compose up -d
+
+        http://localhost:4566/health
     
     * down
     
