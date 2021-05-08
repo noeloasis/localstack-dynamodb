@@ -21,7 +21,7 @@ cd ./$TARGET_NAME
 if [ -e $ZIP_NAME ]; then
    rm $ZIP_NAME
 fi
-zip -r $ZIP_NAME $TARGET_NAME.js node_modules package.json package-lock.json 
+zip -r $ZIP_NAME $TARGET_NAME.js models node_modules package.json package-lock.json tsconfig.json
 
 # delete lambda function
 aws lambda delete-function --profile localstack --function-name $TARGET_NAME --region ap-northeast-1 --endpoint-url=http://localhost:4566
