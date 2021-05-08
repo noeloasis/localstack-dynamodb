@@ -10,6 +10,7 @@
       "module": "CommonJS",
       "moduleResolution": "node",
       "resolveJsonModule": true,
+      "emitDecoratorMetadata": true,
       "outDir": "./dist",
       "baseUrl": "./src",
     },
