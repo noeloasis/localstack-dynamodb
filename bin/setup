@@ -1,0 +1,9 @@
+#!/bin/sh
+
+aws dynamodb create-table --profile localstack --table-name 'SurveyResults' \
+--attribute-definitions '[{"AttributeName":"partitionKey","AttributeType": "S"},{"AttributeName":"sortKey","AttributeType": "S"}]' \
+--key-schema '[{"AttributeName":"partitionKey","KeyType": "HASH"},{"AttributeName":"sortKey","KeyType": "RANGE"}]' \
+--provisioned-throughput '{"ReadCapacityUnits": 5,"WriteCapacityUnits": 5}' \
+--endpoint-url=http://localhost:4566
+
+aws dynamodb put-item --profile localstack --table-name SurveyResults --item '{"partitionKey":{"S": "001"}, "sortKey":{"S": "1"}}' --endpoint-url=http://localhost:4566

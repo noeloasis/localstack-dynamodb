@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./bin/run_lambda 01_dynamodb

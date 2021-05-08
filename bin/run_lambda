@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if [ $# != 1 ]; then
+    echo 'update_lambda [target_name]'
+    exit 1
+fi
+
+TARGET_NAME=$1
+LOG_NAME="result.log"
+echo $LOG_NAME
+
+if [ -e $LOG_NAME ]; then
+   rm $LOG_NAME
+fi
+aws lambda invoke --function-name $TARGET_NAME --profile localstack --endpoint-url=http://localhost:4566 --region ap-northeast-1 $LOG_NAME
+cat $LOG_NAME | jq

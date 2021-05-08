@@ -1,0 +1,3 @@
+#!/bin/sh
+
+./bin/update_lambda 02_dynamodb
