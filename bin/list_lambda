@@ -1,0 +1,1 @@
+aws lambda list-functions --profile localstack --endpoint-url=http://localhost:4566

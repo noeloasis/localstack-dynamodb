@@ -43,6 +43,10 @@
         ./bin/update_lambda_01
         ./bin/update_lambda_02
 
+* list
+
+        ./bin/list_lambda
+
 * run
 
         ./bin/run_lambda_01
